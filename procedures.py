@@ -25,9 +25,8 @@ def extract_domain(data):
             else:
                 n=[company,"No Website found"]
                 m.append(n)
-    df=pd.DataFrame(m)
-    df.columns=['Company','Company Website']
-    return df
+    df1=pd.DataFrame(m)
+    return df1
 def extract_linkedin(data):
     m=[]
     rows=data['company']
@@ -45,7 +44,6 @@ def extract_linkedin(data):
             else:
                 n=[company,"No Linkedin found"]
                 m.append(n)
-    df=pd.DataFrame(m)
-    df.columns=['Company','Company Linkedin URL']
-    return df
+    df2=pd.DataFrame(m)
+    return df2
         
